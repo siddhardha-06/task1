@@ -1,0 +1,126 @@
+*{
+    padding:0px;
+    border:0px;
+    margin:0px;
+    background-color: linear-gradient(to right , white ,grey);
+}
+#logo_img{
+    height:50px;
+    width:auto;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#logo_img{
+    height:50px;
+    width:auto;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header{
+    position: relative;
+    background:linear-gradient(to right,plum ,purple);
+    padding: 18px 0 20px; /* space for nav */
+    text-align: center;
+    min-height: 70px;
+}
+
+h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+nav{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 8px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#f9f5ff,#ffffff);
+    flex: 1; /* allow hero to grow so footer stays at bottom */
+}
+
+.hero-content{
+    max-width: 900px;
+    display: grid;
+    gap: 14px;
+    text-align: left;
+}
+
+.hero-content h2{
+    font-size: 32px;
+    margin: 0;
+}
+
+.hero-content p{
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    background: #6a5acd;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer{
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .social{margin-bottom: 8px}
+footer .social a{color: #fff; margin: 0 8px; text-decoration: none}
+
+@media (max-width: 768px){
+    #logo_img{position: static; transform:none; margin-bottom: 8px}
+    header{padding-bottom: 12px}
+    h1{font-size: 20px}
+    nav{flex-direction: column; gap: 8px}
+    .hero{padding: 40px 16px}
+    .hero-content{text-align:center}
+}
+
+@media (max-width: 480px){
+    .hero-content h2{font-size: 22px}
+    .btn{width:100%; text-align:center}
+}
